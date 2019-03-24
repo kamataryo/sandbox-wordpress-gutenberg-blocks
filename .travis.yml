@@ -1,4 +1,8 @@
 language: node_js
 node_js:
   - stable
-  - latest
+  - v11
+
+scripts:
+  - npm run build
+  - npm tset
