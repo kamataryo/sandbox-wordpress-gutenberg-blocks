@@ -20,6 +20,8 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "jest": "^24.5.0",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   }
