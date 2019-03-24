@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for Edit component match snapshot 1`] = `"<div><input type=\\"text\\" value=\\"\\"></div>"`;
+
+exports[`test for Save component match snapshot 1`] = `"<div><span class=\\"my-text\\">saved: abc</span></div>"`;
