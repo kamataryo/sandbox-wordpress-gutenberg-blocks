@@ -9,6 +9,18 @@ describe('test for Edit component', () => {
     expect(wrapper.find('input').length).toBe(1)
   })
 
+  test('onChange callback', () => {
+    const mockFn = jest.fn()
+    const wrapper = shallow(
+      <Edit attributes={attributes} setAttributes={mockFn} />
+    )
+    wrapper
+      .find('input')
+      .simulate('change', { target: { value: 'next value' } })
+
+    expect(mockFn).toHaveBeenCalledWith({ text: 'next value' })
+  })
+
   test('match snapshot', () => {
     const dom = mount(<Edit attributes={attributes} />).html()
     expect(dom).toMatchSnapshot()
